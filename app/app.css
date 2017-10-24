@@ -1,0 +1,57 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.bottomaligned {position:relative; margin-top:15px; float: right}
+
+.item {
+  height: 50px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.item img {
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  float: left;
+}
+
+.item:hover {
+  background:slategray;
+  height: 70px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+.bold{
+  font-weight: bold;
+}
+
+input.ng-invalid {
+  border:1px solid pink;
+}
+input.ng-valid {
+  border:1px solid black;
+}

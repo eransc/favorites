@@ -1,0 +1,42 @@
+<div class="modal-header">
+        <button type="button" ng-click="$ctrl.cancel();" class="close" data-dismiss="modal" aria-label="close">
+            <i class="fa fa-times"></i>
+        </button>
+        <h4 class="modal-title">Remove favorite website</h4>
+    </div>
+    
+    <div class="modal-body">
+        <div class="panel panel-primary" >
+            
+                    <div class="panel-body">
+                        <h4>This action will remove the favorite website 
+                            <pre>{{$ctrl.resolve.website.name}} > {{ $ctrl.resolve.website.url}}</pre>
+                        </h4>
+                        <form name="myForm" ng-submit="submitForm(myForm.$valid)" action="" novalidate>
+                            
+                            <!-- <div class="form-group">
+                                <div><label for="website-name">Website name</label>
+                                <input id="website-name" required class="form-control" type="text" ng-model="$ctrl.website.name" ></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="url">Url</label>
+                                <input id="url" required class="form-control" type="text" ng-model="$ctrl.website.url"/>
+                            </div> -->
+                            
+                            <button type="submit" class="btn btn-primary col-md-4"
+                                    ng-disabled="myForm.$invalid"
+                                    ng-click="$ctrl.apply()">Remove Website</button>
+                            <span class="col-md-4"></span>
+                            <button type="button" class="btn btn-primary col-md-4"
+                                    ng-click="$ctrl.cancel()">Cancel</button>
+            
+                        </form>
+                    </div>
+                </div>
+        
+    </div>
+    
+    <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="$ctrl.apply();" data-dismiss="modal">Add Website</button>
+        <button type="button" class="btn btn-default" ng-click="$ctrl.cancel();" data-dismiss="modal">Cancel</button>
+    </div> -->

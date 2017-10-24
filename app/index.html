@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>Microsoft - Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modals.css">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body class="fixed-navigation fixed-header" ng-app="app" ng-cloak>
+        <div id="wrapper" class="toggled">
+                
+                        <!-- Sidebar -->
+                        <div id="sidebar-wrapper">
+                            <ul class="sidebar-nav">
+                                <li class="sidebar-brand">
+                                    <a href="#">
+                                        Favorites Site
+                                    </a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a ui-sref="favorites">Favorite Websites</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a ui-sref="logs">Actions Log</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /#sidebar-wrapper -->
+                
+                        <!-- Page Content -->
+                        <div id="page-content-wrapper">
+                            <div class="container-fluid">
+                                <div ui-view="container"></div>
+                            </div>
+                        </div>
+                        <!-- /#page-content-wrapper -->
+                
+                    </div>
+                    <!-- /#wrapper -->
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+
+<script src="app.module.js"></script>
+
+<script src="layout/layout.module.js"></script>
+<script src="blocks/router/router.module.js"></script>
+<script src="blocks/router/config.route.js"></script>
+<script src="app.ctrl.js"></script>
+
+<!-- components -->
+<script src="components/favorites/favorites.cmp.js"></script>
+<script src="components/actionlog/actionlog.cmp.js"></script>
+
+<!-- modals -->
+<script src="modals/addeditsite/addeditsite.cmp.js"></script>
+<script src="modals/removewebsite/removewebsite.cmp.js"></script>
+
+<script src="validators/validNumber.js"></script>
+
+<script src="services/services.module.js"></script>
+<script src="services/favorites.service.js"></script>
+
+<script src="sample-data/sites-data.js"></script>
+<script src="constants.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<div class="row">
+<div class="col-md-12">
+        
+        <h1 class="col-md-6">Favorites Sites ({{::$ctrl.websites.length}})</h1>
+        <span class="col-md-4">
+                <input class="form-control" type="text"
+                ng-model="selected" 
+                placeholder="Start typing a website" 
+                uib-typeahead="website.name for website in $ctrl.websites | filter: {name:$viewValue} | limitTo:8" 
+                 />
+        </span>
+        
+        <span><i class="fa fa-th-large"></i></span>
+        <button ng-click="$ctrl.addWebsite()" class=" btn btn-primary">Add</button>
+</div>
+</div>
+
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                    <table class="table table-striped table-hover table-users">
+                            <thead>
+                                <tr>
+                                    <th>Website name</th>
+                                    <th>Url</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+            
+                            <tbody>
+                                <tr ng-repeat="site in $ctrl.websites">
+                                        <td>{{::site.name}}</td>
+                                        <td>{{::site.url}}</td>                                                          
+                                        <td><a ng-click="$ctrl.editWebsite(site);$event.preventDefault();" href="#"><i class="fa fa-2x fa-edit"></i></a></td>
+                                        <td><a ng-click="$ctrl.deleteWebsite(site);$event.preventDefault();" href="#"><i class="fa fa-2x fa-trash-o"></i></a></td>
+                                </tr>
+                               </tbody>
+            
+                        </table>
+            </div>
+        </div>
+    </div>

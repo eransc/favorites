@@ -1,0 +1,107 @@
+.btn {
+    border: 2px solid #1d9ac7;
+  }
+  .btn-default {
+    background-color: #fff;
+    color: #1d9ac7;
+  }
+  .btn-primary {
+    background-color: #1d9ac7;
+  }
+  .btn:active,
+  .btn:focus,
+  .btn:hover {
+    border-color: #286090 !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .btn-default:focus,
+  .btn-default:hover {
+    background-color: #fff;
+    color: #286090;
+  }
+  .btn-primary:focus,
+  .btn-primary:hover {
+    background-color: #286090;
+  }
+  .btn-launch {
+    margin-top: 30px;
+  }
+  .modal-dashboard .modal-content {
+    border: 2px solid #1d9ac7;
+  }
+  .modal-dashboard .modal-header {
+    background: #1d9ac7;
+    padding: 6px 15px;
+  }
+  .modal-dashboard .modal-header .close {
+    color: white;
+    font-size: 33px;
+    opacity: 1;
+  }
+  .modal-dashboard .modal-title {
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  .modal-dashboard .modal-body {
+    color: #333;
+    padding: 6px 30px 30px
+  }
+  .sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .modal-dashboard .modal-body p,
+  .modal-dashboard .sortable li {
+    font-size: 18px;
+    line-height: 36px;
+    padding: 9px 12px;
+  }
+  .modal-dashboard .sortable li {
+    background: #fff;
+    background: rgba(255, 255, 255, .75);
+    border-bottom: 1px solid #ccc;
+    cursor: move;
+    margin: 0;
+  }
+  .modal-dashboard .sortable li:last-child {
+    border-bottom-color: transparent;
+  }
+  .modal-dashboard .sortable li .fa {
+    cursor: pointer;
+    float: right;
+    font-size: 33px;
+    margin-left: 6px;
+    padding: 0 6px;
+  }
+  .modal-dashboard .sortable li .fa-eye {
+    color: #808080;
+  }
+  .modal-dashboard .sortable li .fa-eye.active {
+    color: #1d9ac7;
+  }
+  .modal-dashboard .modal-footer {
+    border: none;
+    padding: 6px 30px 30px;
+  }
+  .modal-dashboard .modal-footer .btn {
+    margin-left: 24px;
+    min-width: 135px;
+  }
+  
+  /**** transitions ****/
+  .btn, .fa {
+    outline: none !important;
+    -webkit-transition: background-color .4s ease-out, border-color .4s ease-out, color .4s ease-out;
+         -o-transition: background-color .4s ease-out, border-color .4s ease-out, color .4s ease-out;
+            transition: background-color .4s ease-out, border-color .4s ease-out, color .4s ease-out;
+  }
+  .btn:focus, .fa:focus,
+  .btn:hover, .fa:hover {
+    -webkit-transition: background-color .05s ease-out, border-color .05s ease-out, color .05s ease-out;
+         -o-transition: background-color .05s ease-out, border-color .05s ease-out, color .05s ease-out;
+            transition: background-color .05s ease-out, border-color .05s ease-out, color .05s ease-out;
+  }

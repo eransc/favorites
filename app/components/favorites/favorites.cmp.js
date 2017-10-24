@@ -14,15 +14,6 @@
 
     function FavoritesCtrl($uibModal, favoritesService, $state, $scope) {
         var ctrl = this;
-        $scope.objects = [
-            {id:1, name : 'Dilip', type :{ title : 'a'}},
-            {id:2, name : 'Devendra', type :{ title : 'b'}},
-            {id:3, name : 'Jayesh', type :{ title : 'a'}},
-            {id:4, name : 'Jekin', type :{ title : 'c'}},
-            {id:5, name : 'Gaurang', type :{ title : 'a'}},
-            {id:6, name : 'Bhavin', type :{ title : 'e'}},
-    
-        ];
         
         ctrl.favoritesService = favoritesService;
 
@@ -30,7 +21,7 @@
             ctrl.loadData();
         });
 
-        this.$onInit = function () {
+        ctrl.$onInit = function () {
             ctrl.addWebsite = function(){
                 $uibModal.open({
                     component: 'addeditsite',
